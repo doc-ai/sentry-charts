@@ -8,7 +8,7 @@ spec:
   rewrite: /
   host: {{ .Values.system.host }}
   host_regex: false
-  service: "{{ template "sentry.fullname" . }}-web.{{.Release.Namespace}}:9000"
+  service: "{{ template "sentry.fullname" . }}-nginx.{{.Release.Namespace}}:80"
   timeout_ms: 0
   allow_upgrade:
   - websocket
