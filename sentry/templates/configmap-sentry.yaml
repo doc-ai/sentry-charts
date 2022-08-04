@@ -27,6 +27,12 @@ data:
     symbolicator.options:
       url: "http://{{ template "sentry.fullname" . }}-symbolicator:{{ template "symbolicator.port" }}"
     {{- end }}
+    #############
+    # PagerDuty #
+    #############
+    {{- if .Values.pagerduty.enabled }}
+    pagerduty.app-id: {{ .Values.pagerduty.appId | quote }}
+    {{- end }}
 
     ##########
     # Github #

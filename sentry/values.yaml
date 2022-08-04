@@ -549,6 +549,9 @@ github: {}
 #   privateKey: "-----BEGIN RSA PRIVATE KEY-----\nMIIEpA" !!!! Don't forget a trailing \n
 #   webhookSecret:  "xxxxx`"
 
+pagerduty: {}
+  # appid: "xxxx"
+
 # https://developers.google.com/identity/sign-in/web/server-side-flow#step_1_create_a_client_id_and_client_secret
 google: {}
 # google:
