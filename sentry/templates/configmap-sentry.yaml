@@ -30,7 +30,7 @@ data:
     #############
     # PagerDuty #
     #############
-    {{- if .Values.pagerduty.enabled }}
+    {{- if .Values.pagerduty.appId }}
     pagerduty.app-id: {{ .Values.pagerduty.appId | quote }}
     {{- end }}
 
